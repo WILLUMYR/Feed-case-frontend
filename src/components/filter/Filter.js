@@ -1,13 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Filter.css';
 
 const Filter = () => {
-    // const [filterArticles, setFilterArticles] = useState('');
-
-    // const handleButtonPress = (event) => {
-    // } 
-
-    
     return (
         <nav className="filter">
             <button className="filter__button"> Essay </button>

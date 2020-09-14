@@ -1,0 +1,8 @@
+.datecard {
+    margin: 10px 50px;
+    padding: 10px 10px 15px 10px;
+    background-color: white;
+    font-size: 56px;
+    border-radius: 10px;
+    display: inline-block;
+}

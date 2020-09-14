@@ -1,6 +1,7 @@
 .filter {
     width: 100vw;
-    padding: 10px 30px;
+    margin-bottom: 70px; 
+    padding: 20px 50px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -8,6 +9,7 @@
 .filter__button {
     background-color: transparent;
     font-family: 'Caslon Ionic Web', 'serif';
+    font-size: 20px;
     border-radius: 30px;
     padding: 5px 10px;
     margin: 0 4px;
