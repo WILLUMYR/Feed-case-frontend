@@ -5,7 +5,7 @@
 
 .main-article__image {
     order: 0;
-    background-image: url('./TH01.jpg');
+    background-image: url('../images/TH01.jpg');
     background-position: center;
     background-size: cover;
     width: 150%;
