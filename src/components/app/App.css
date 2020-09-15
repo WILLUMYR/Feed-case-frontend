@@ -31,3 +31,8 @@
   padding-right: 110px;
   justify-content: space-between;
 }
+
+footer {
+  height: 300px;
+  background-color: black;
+}

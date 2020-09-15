@@ -1,0 +1,26 @@
+.image-stack {
+    margin: 20px auto;
+    width: 400px;
+    height: 500px;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+}
+
+.image-stack img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease 0.3s;
+}
+
+.image-stack img:nth-child(1) {
+    transform: rotate(5deg);
+}
+.image-stack img:nth-child(2) {
+    transform: rotate(-5deg);
+}
+.image-stack img:nth-child(3) {
+    transform: rotate(-10deg);
+}

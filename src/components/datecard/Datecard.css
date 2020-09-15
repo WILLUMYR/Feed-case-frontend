@@ -6,3 +6,8 @@
     border-radius: 10px;
     display: inline-block;
 }
+
+.sticky {
+    position: sticky;
+    top: 10px;
+}
