@@ -1,0 +1,55 @@
+$minusDeg: random(10) + -10 + deg;
+$minusDeg2: random(10) + -10 + deg;
+$deg: random(10) + deg;
+$deg2: random(10) + deg;
+$deg3: random(10) + deg;
+
+.image-stack {
+    margin: 200px auto 20px;
+    width: 90%;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+
+}
+
+.image-stack img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease 0.3s;
+}
+
+.TH01 {
+    transform: rotate($deg);
+}
+.TH02 {
+    transform: rotate($minusDeg);
+}
+.TH03 {
+    transform: rotate($deg2);
+}
+.TH04{
+    transform: rotate($minusDeg2);
+}
+.TH05{
+    transform: rotate($deg3);
+}
+
+// .image-stack img:nth-child(1) {
+//     transform: rotate($deg);
+// }
+// .image-stack img:nth-child(2) {
+//     transform: rotate($minusDeg);
+// }
+// .image-stack img:nth-child(3) {
+//     transform: rotate($deg2);
+// }
+// .image-stack img:nth-child(4) {
+//     transform: rotate($minusDeg2);
+// }
+// .image-stack img:nth-child(5) {
+    
+//     transform: rotate($deg3);
+// }

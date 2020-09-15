@@ -24,18 +24,30 @@ function App() {
       <Events time="01:13:18"/>
       <MainArticle />
       <main className="articles">
-      <section className="articles__top">
-        <Article01 />
-        <Article02 />
-      </section>
-      <section className="articles__bottom">
-        <Article01 />
-        <Article02 />
-      </section>
+        <section className="articles__left-indent">
+          <Article01 />
+          <Article02 />
+        </section>
+        <section className="articles__right-indent">
+          <Article02 />
+          <Article01 />
+        </section>
       </main>
       <Datecard date="Mandag 11.oktober"/>
-      <MainArticle />
-      <ImageStack />
+      <main className="articles">
+        <section className="articles__right-indent">
+          <Article01 />
+          <ImageStack />
+        </section>
+        <section className="articles__left-indent">
+          <Article01 />
+          <Article02 />
+        </section>
+        <section className="articles__right-indent">
+          <Article01 />
+          <ImageStack />
+        </section>
+      </main>
     <footer></footer>
     </main>
   </>

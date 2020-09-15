@@ -17,14 +17,14 @@
   margin: 150px 50px;
 }
 
-.articles__top {
+.articles__left-indent {
   display: grid;
   grid-template-columns: 52% 40%;
   padding-left: 110px;
   justify-content: space-between;
 }
 
-.articles__bottom {
+.articles__right-indent {
   margin: 130px 0;
   display: grid;
   grid-template-columns: 40% 52%;

@@ -1,15 +1,24 @@
-import React from 'react';
-import './ImageStack.css';
-import TH01 from '../images/TH01.jpg';
-import TH02 from '../images/TH02.jpg';
-import TH03 from '../images/TH03.jpg';
+import React, {useState} from 'react';
+import './ImageStack.scss';
+import {TH01, TH02, TH03, TH04, TH05} from '../images';
 
 const ImageStack = () => {
+    const [images, setImages] = useState([TH01, TH02, TH03, TH04, TH05])
+    
+    const handleOnClick = (image) => {
+        const newImages = images.filter(images => images !== image);
+        console.log(images);
+        newImages.unshift(image);
+        setImages(newImages);
+    }
+
     return (
         <figure className="image-stack">
-            <img src={TH01} alt="TH01" />
-            <img src={TH02} alt="TH02" />
-            <img src={TH03} alt="TH03" />
+            {images.map((image) => {
+                const regex = /TH\d+/;
+                const arr = regex.exec(image);
+                return <img key={image} className={arr[0]} src={image} alt="TH02" onClick={() => handleOnClick(image)} />
+            })}
         </figure>
     );
 };
