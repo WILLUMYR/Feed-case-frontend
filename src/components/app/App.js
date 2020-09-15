@@ -21,7 +21,7 @@ function App() {
     <main className={date === 'Monday'? 'content-M' : 'content'}>
       <Filter />
       <Datecard  date="Tirsdag 12.oktober"/>
-      <Events time="01:13:18"/>
+      <Events timeToEvent={'September 18, 2020 20:30:00'}/>
       <MainArticle />
       <main className="articles">
         <section className="articles__left-indent">
