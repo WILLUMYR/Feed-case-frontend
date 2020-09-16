@@ -3,7 +3,7 @@ import './Articles.css';
 
 const Article02 = () => {
     return (
-        <article className="article-1">
+        <article className="article-content-box">
             <h1 className="article-1__time">kl. 07:00</h1>
             <div className="article-2__image"></div>
             <h1 className="article-1__header">Designing for Dynamic Equilibrium</h1>

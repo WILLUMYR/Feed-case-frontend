@@ -1,4 +1,4 @@
-import React, {useState, } from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Filter from '../filter/Filter';
 import Datecard from '../datecard/Datecard';
@@ -11,17 +11,20 @@ import ImageStack from '../image-stack/ImageStack';
 function App() {
   const [day, setDay] = useState('');
   const [prevDay, setPrevDay] = useState('Tirsdag');
+  const [windowWidth, setWindowWidth] = useState();
+  
+  window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
 
   return (
     <>
     <main className={`content ${day}`}>
-      <Filter />
+      <Filter windowWidth={windowWidth}/>
       <Datecard  date="Tirsdag 12.oktober" setDay={setDay} prevDay={prevDay} setPrevDay={setPrevDay}/>
       <section className="events">
       <Event timeToEvent={'September 18, 2020 20:30:00'}/>
       <Event timeToEvent={'September 19, 2020 18:15:00'}/>
       </section>
-      <MainArticle />
+      <MainArticle windowWidth={windowWidth}/>
       <main className="articles">
         <section className="articles__left-indent">
           <Article01 />

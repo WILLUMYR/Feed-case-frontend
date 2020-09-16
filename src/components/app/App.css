@@ -42,3 +42,17 @@ footer {
   height: 300px;
   background-color: black;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .articles__left-indent {
+    padding-left: 0;
+    grid-template-columns: 48% 48%;
+  }
+  
+  .articles__right-indent {
+    padding-right: 0;
+    grid-template-columns: 48% 48%;
+  }
+
+}

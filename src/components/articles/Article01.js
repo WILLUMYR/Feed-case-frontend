@@ -3,7 +3,7 @@ import './Articles.css';
 
 const Article01 = () => {
     return (
-        <article className="article-1">
+        <article className="article-content-box">
             <h1 className="article-1__time">kl. 10:00</h1>
             <div className="article-1__image"></div>
             <h1 className="article-1__header">Hvordan planlegger vi byene våre i 2052?</h1>

@@ -38,3 +38,16 @@
     margin: 2px;
     font-style: italic;
 }
+
+@media screen and (max-width: 1024px) {
+    .events__card {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .events__card h2 {
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+}

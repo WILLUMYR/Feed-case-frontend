@@ -7,7 +7,6 @@ const ImageStack = () => {
     
     const handleOnClick = (image) => {
         const newImages = images.filter(images => images !== image);
-        console.log(images);
         newImages.unshift(image);
         setImages(newImages);
     }

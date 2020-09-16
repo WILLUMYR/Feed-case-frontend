@@ -1,4 +1,4 @@
-.article-1 {
+.article-content-box{
     display: flex;
     flex-flow: column nowrap;
 }

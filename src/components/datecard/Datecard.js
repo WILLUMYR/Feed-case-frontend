@@ -11,7 +11,6 @@ const Datecard = ({date, setDay, prevDay, setPrevDay}) => {
         window.addEventListener('scroll', () => handleScroll())
         if (sticky <= 10) {
             const currentDay = date.replace(/ .*/,'');
-            console.log(currentDay);
             setDay(currentDay);
         }
         if (sticky > 10) setDay(prevDay);

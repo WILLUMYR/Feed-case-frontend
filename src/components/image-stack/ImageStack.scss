@@ -40,3 +40,13 @@ $deg3: random(10) + deg;
 .TH05{
     transform: rotate($deg3);
 }
+
+@media screen and (max-width: 1024px) {
+
+    
+    .image-stack img:hover {
+        transform: none;
+    }
+
+
+}
