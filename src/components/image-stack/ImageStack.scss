@@ -21,6 +21,10 @@ $deg3: random(10) + deg;
     transition: ease 0.3s;
 }
 
+.image-stack img:hover {
+    transform: scale(1.1);
+}
+
 .TH01 {
     transform: rotate($deg);
 }
@@ -36,20 +40,3 @@ $deg3: random(10) + deg;
 .TH05{
     transform: rotate($deg3);
 }
-
-// .image-stack img:nth-child(1) {
-//     transform: rotate($deg);
-// }
-// .image-stack img:nth-child(2) {
-//     transform: rotate($minusDeg);
-// }
-// .image-stack img:nth-child(3) {
-//     transform: rotate($deg2);
-// }
-// .image-stack img:nth-child(4) {
-//     transform: rotate($minusDeg2);
-// }
-// .image-stack img:nth-child(5) {
-    
-//     transform: rotate($deg3);
-// }

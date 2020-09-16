@@ -5,12 +5,18 @@
   font-family: 'Caslon Ionic Web', 'serif';
   transition: ease 1s;
 }
-.content-M {
+.Mandag {
   background-color: #d4ddbe;
-  height: auto;
-  padding-top: 180px;
-  font-family: 'Caslon Ionic Web', 'serif';
-  transition: ease 1s;
+  }
+
+.Tirsdag {
+  background-color: #efd854;
+}
+
+.events {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px;
 }
 
 .articles {
