@@ -9,6 +9,7 @@
     background-color: black;
     color: white;
     width: 46%;
+    box-sizing: content-box;
 }
 
 .events__card h2 {
@@ -40,6 +41,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+    
     .events__card {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
@@ -50,4 +52,27 @@
         border-bottom: 1px solid white;
         padding-bottom: 10px;
     }
+}
+
+@media screen and (max-width: 375px) {
+
+    .events__card {
+        width: 100%;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    .events__card h2 {
+        font-size: 30px;
+    }
+
+    .card__info {
+        width: 250px;
+        
+    }
+
+    .card__info h5 {
+        font-size: 15px;
+    }
+
 }

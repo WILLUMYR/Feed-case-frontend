@@ -4,7 +4,9 @@
 }
 
 .main-article__image {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     order: 0;
     background-image: url('../images/TH01.jpg');
     background-position: center;
@@ -49,12 +51,9 @@
 }
 
 .live-card {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    top: 47%;
-    left: 42%;
     margin-bottom: -22px;
     background-color: white;
     border-radius: 5px;
@@ -114,6 +113,27 @@
 
     .content__ingress {
         margin-right: 40%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .main-article {
+        margin: 40px 15px;
+    }
+
+    .main-article__image {
+        height: 280px;
+    }
+
+    .content__header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .content__ingress {
+        margin: 0 0 15px 0;
     }
 
 }

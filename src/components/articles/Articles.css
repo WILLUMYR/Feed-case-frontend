@@ -51,3 +51,23 @@
     font-size: 16px;
     margin: 0;
 }
+
+@media screen and (max-width: 375px) {
+
+    .article-content-box {
+        margin-bottom: 80px;
+    }
+
+    .article-1__image {
+        height: 300px;
+    }
+    .article-2__image {
+        height: 300px;
+    }
+
+    .article-1__header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+}

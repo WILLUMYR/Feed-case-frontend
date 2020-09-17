@@ -61,4 +61,37 @@ footer {
     grid-template-columns: 70% auto;
   }
 
+  .events {
+    overflow-x: scroll;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .events {
+    width: auto;
+    margin: 20px 0 20px 15px;
+  }
+
+  .articles {
+    margin: 80px 15px 0px 15px;
+  }
+
+  .articles__left-indent {
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+  
+  .articles__right-indent {
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+  }
+
+  .articles__lone-article {
+    grid-template-columns: 1fr;
+  }
+
+  
+
 }

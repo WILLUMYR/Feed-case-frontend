@@ -48,6 +48,13 @@ $deg3: random(10) + deg;
     .image-stack img:hover {
         transform: none;
     }
+}
 
+@media screen and (max-width: 375px) {
+
+    .image-stack {
+        margin: 50px auto 20px;
+        height: 400px;
+    }
 
 }
