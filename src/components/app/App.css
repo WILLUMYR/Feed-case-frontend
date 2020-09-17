@@ -55,4 +55,10 @@ footer {
     grid-template-columns: 48% 48%;
   }
 
+  .articles__lone-article {
+    margin: 130px 0;
+    display: grid;
+    grid-template-columns: 70% auto;
+  }
+
 }

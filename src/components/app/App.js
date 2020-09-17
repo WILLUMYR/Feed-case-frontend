@@ -36,8 +36,9 @@ function App() {
         </section>
       </main>
       <Datecard date="Mandag 11.oktober" setDay={setDay} prevDay={prevDay} setPrevDay={setPrevDay}/>
+       {windowWidth > 1024 ?  
       <main className="articles">
-        <section className="articles__right-indent">
+       <section className="articles__right-indent">
           <Article01 />
           <ImageStack />
         </section>
@@ -49,7 +50,22 @@ function App() {
           <Article01 />
           <ImageStack />
         </section>
+      </main> : 
+      <main className="articles">
+        <section className="articles__lone-article">
+          <Article02 />
+        </section>
+        <ImageStack />
+        <section className="articles__left-indent">
+      <Article01 />
+      <Article02 />
+        </section>
+        <section className="articles__lone-article">
+          <Article02 />
+        </section>
+        <ImageStack />
       </main>
+      }
     <footer></footer>
     </main>
   </>
