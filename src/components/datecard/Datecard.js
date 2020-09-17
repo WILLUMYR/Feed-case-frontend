@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './Datecard.css';
 
-const Datecard = ({date, setDay, prevDay, setPrevDay}) => {
+const Datecard = ({date, setDay, prevDay}) => {
     const inputEl = useRef(null);
     const [sticky, setSticky] = useState();
     
@@ -14,7 +14,7 @@ const Datecard = ({date, setDay, prevDay, setPrevDay}) => {
             setDay(currentDay);
         }
         if (sticky > 10) setDay(prevDay);
-    }, [sticky])
+    }, [sticky, setDay, date, prevDay])
 
 
     return (
