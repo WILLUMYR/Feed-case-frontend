@@ -21,7 +21,7 @@ function App() {
       <Filter windowWidth={windowWidth}/>
       <Datecard  date="Tirsdag 12.oktober" setDay={setDay} prevDay={prevDay} setPrevDay={setPrevDay}/>
       <section className="events">
-      <Event timeToEvent={'September 18, 2020 20:30:00'}/>
+      <Event timeToEvent={'September 18, 2020 20:30:30'}/>
       <Event timeToEvent={'September 19, 2020 18:15:00'}/>
       </section>
       <MainArticle windowWidth={windowWidth}/>
@@ -36,21 +36,7 @@ function App() {
         </section>
       </main>
       <Datecard date="Mandag 11.oktober" setDay={setDay} prevDay={prevDay} setPrevDay={setPrevDay}/>
-       {windowWidth > 1024 ?  
-      <main className="articles">
-       <section className="articles__right-indent">
-          <Article01 />
-          <ImageStack />
-        </section>
-        <section className="articles__left-indent">
-          <Article01 />
-          <Article02 />
-        </section>
-        <section className="articles__right-indent">
-          <Article01 />
-          <ImageStack />
-        </section>
-      </main> : 
+       {windowWidth <= 1024 ?  
       <main className="articles">
         <section className="articles__lone-article">
           <Article02 />
@@ -65,7 +51,20 @@ function App() {
         </section>
         <ImageStack />
       </main>
-      }
+      :<main className="articles">
+      <section className="articles__right-indent">
+          <Article01 />
+          <ImageStack />
+        </section>
+        <section className="articles__left-indent">
+          <Article01 />
+          <Article02 />
+        </section>
+        <section className="articles__right-indent">
+          <Article01 />
+          <ImageStack />
+        </section>
+      </main> }
     <footer></footer>
     </main>
   </>

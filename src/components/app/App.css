@@ -20,12 +20,12 @@
 }
 
 .articles {
-  margin: 150px 50px;
+  margin: 100px 50px;
 }
 
 .articles__left-indent {
   display: grid;
-  grid-template-columns: 52% 40%;
+  grid-template-columns: 52% 37%;
   padding-left: 110px;
   justify-content: space-between;
 }
