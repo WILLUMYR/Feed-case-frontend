@@ -12,6 +12,7 @@
     background-position: center;
     background-size: cover;
     width: 150%;
+    margin: 0;
 }
 
 .main-article__content {
